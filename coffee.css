@@ -30,6 +30,9 @@ body{
     background-color: #E1D4C9;
 }
 .header__container{
+    background-color: #E1D4C9;
+    position: fixed;
+    top: 0;
     display: flex;
     flex-flow: row;
     width: 100%;
@@ -54,7 +57,6 @@ body{
     font-family: 'Inter';
     font-size: 16px;
     line-height: 24px;
-    font-weight: 550;
     color: #403F3D;
     margin: 30px;
     text-decoration: none;
@@ -75,7 +77,7 @@ body{
     left: 300px;
 }
 .header__hero{
-    margin-top: 20px;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     width: 100%;
