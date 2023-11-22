@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="coffee.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./carousele.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -45,7 +46,7 @@
             <div class="main__favorite-container">
                 <h2 class="main__favorite-container-paragraf">Choose your <span class="header__hero-offer-information-paragraf-enjoy">favorite</span> coffee</h2>
                 <div class="main__favorite-containe-slider">
-                    <button class="main__favorite-containe-slider-but">←</button>
+                    <button class="main__favorite-containe-slider-but" id="1">←</button>
                     <div class="main__favorite-containe-slider-slide">
                         <div class="main__favorite-containe-slider-slide-one">
                             <img src="/img/coffee-slider.png" alt="coffe_slider_one">
@@ -53,6 +54,22 @@
                                 <h2 class="main__favorite-containe-slider-slide-one-text-paragrafe">S’mores Frappuccino</h2>
                                 <p class="main__favorite-containe-slider-slide-one-text-information">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
                                 <p class="main__favorite-containe-slider-slide-one-text-sell">$5.50</p>
+                            </div>
+                        </div>
+                        <div class="main__favorite-containe-slider-slide-two">
+                            <img src="/img/coffee-slider-2.png" alt="coffe_slider_two" style="width: 480px; height: 480px;">
+                            <div class="main__favorite-containe-slider-slide-two-text">
+                                <h2 class="main__favorite-containe-slider-slide-one-text-paragrafe">Caramel Macchiato</h2>
+                                <p class="main__favorite-containe-slider-slide-one-text-information">Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</p>
+                                <p class="main__favorite-containe-slider-slide-one-text-sell">$5.00</p>
+                            </div>
+                        </div>
+                        <div class="main__favorite-containe-slider-slide-three">
+                            <img src="/img/coffee-slider-3.png" alt="coffe_slider_three" style="width: 480px; height: 480px;">
+                            <div class="main__favorite-containe-slider-slide-three-text">
+                                <h2 class="main__favorite-containe-slider-slide-one-text-paragrafe">Ice coffee</h2>
+                                <p class="main__favorite-containe-slider-slide-one-text-information">A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
+                                <p class="main__favorite-containe-slider-slide-one-text-sell">$4.50</p>
                             </div>
                         </div>
                     </div>
@@ -71,12 +88,12 @@
                 <h2 class="main__about-container-text">Resource is <span class="main__about-container-text-span">the perfect and cozy place</span> where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</h2>
                 <div class="main__about-container-image">
                     <div class="main__about-container-image-column">
-                        <img src="/img/box.png" alt="main__about-container-image-column-photoone">
-                        <img src="/img/box2.png" alt="main__about-container-image-column-phototwo">
+                        <img src="/img/box.png" alt="main__about-container-image-column-photoone" class="main__about-container-image-column-photo">
+                        <img src="/img/box2.png" alt="main__about-container-image-column-phototwo" class="main__about-container-image-column-photo">
                     </div>
                     <div class="main__about-container-image-column">
-                        <img src="/img/box3.png" alt="main__about-container-image-column-photothree">
-                        <img src="/img/box4.png" alt="main__about-container-image-column-photofour">
+                        <img src="/img/box3.png" alt="main__about-container-image-column-photothree" class="main__about-container-image-column-photo">
+                        <img src="/img/box4.png" alt="main__about-container-image-column-photofour" class="main__about-container-image-column-photo">
                     </div>
                 </div>
             </div>
@@ -128,11 +145,11 @@
                 <div class="footer__container-contacts-info">
                     <div class="footer__container-contacts-info-full">
                         <img src="/img/pin-alt.png" alt="location">
-                        <p class="footer__container-contacts-info-full-item">8558 Green Rd., LA</p>
+                        <a href="https://yandex.by/maps/?ll=27.555691%2C53.902735&mode=search&sll=27.555691%2C53.902735&sspn=0.471039%2C0.161790&text=8558%20Green%20Rd.%2C%20LA&whatshere%5Bpoint%5D=27.350937%2C37.142450&whatshere%5Bzoom%5D=16&z=4" class="footer__container-contacts-info-full-item">8558 Green Rd., LA</a>
                     </div>
                     <div class="footer__container-contacts-info-full">
                         <img src="/img/phone.png" alt="telephone">
-                        <p class="footer__container-contacts-info-full-item">+1 (603) 555-0123</p>
+                        <a href = '#' class="footer__container-contacts-info-full-item">+1 (603) 555-0123</a>
                     </div>
                     <div class="footer__container-contacts-info-full">
                         <img src="/img/clock.png" alt="time">
