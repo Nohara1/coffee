@@ -1,11 +1,45 @@
-let slideOne = document.querySelector('.main__favorite-containe-slider-slide-one');
-let slideTwo = document.querySelector('.main__favorite-containe-slider-slide-two');
-let slideThree = document.querySelector('.main__favorite-containe-slider-slide-three');
-console.log(slideOne);
+const slides = document.querySelectorAll('.main__favorite-containe-slider-slide > div');
+const controlSpans = document.querySelectorAll('.main__favorite-containe-control-span')
+const prevButton = document.getElementById('left');
+const nextButton = document.getElementById('right');
 
+let currentIndex = 0;
 
-// let array = [slideOne, slideTwo, slideThree];
+function updateActiveIndicator(index) {
+    controlSpans.forEach((span, i) => {
+      if (i === index) {
+        span.classList.add('active');
+      } else {
+        span.classList.remove('active');
+      }
+    });
+  }
 
-// slideOne.addEventListener('click', (e) => {
-//     alert('Привет');
-// });
+function hideAllSlides() {
+  slides.forEach(slide => {
+    slide.style.display = 'none';
+  });
+}
+
+function showSlide(index) {
+  hideAllSlides();
+  slides[index].style.display = 'block';
+  updateActiveIndicator(index)
+}
+
+function prevSlide() {
+  currentIndex = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
+  showSlide(currentIndex);
+}
+
+function nextSlide() {
+  currentIndex = (currentIndex === slides.length - 1) ? 0 : currentIndex + 1;
+  showSlide(currentIndex);
+}
+
+prevButton.addEventListener('click', prevSlide);
+nextButton.addEventListener('click', nextSlide);
+ 
+
+showSlide(currentIndex);
+updateActiveIndicator(currentIndex);
