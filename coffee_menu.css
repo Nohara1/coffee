@@ -1,0 +1,309 @@
+@font-face {
+	font-family: 'Inter'; 
+	src: local('Inter'),
+		url(/font/Inter-SemiBold.otf); 
+     
+};
+@font-face {
+    font-family: 'Inter-400'; 
+    src: local('Inter-400'),
+        url(/font/Inter-Regular.otf);
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+    background-color: #E1D4C9;
+    margin:  0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    height: 100%;
+}
+
+/* header class */
+
+.header{
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    height: 60px;
+    background-color: #E1D4C9;
+}
+.header__container{
+    background-color: #E1D4C9;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    height: 60px;
+}
+.header__container-logo{
+    width: 100px;
+    height: 60px;
+}
+.header__container-navigation{
+    display: flex;
+    justify-content: center;
+    width: 1340px;
+    display: flex;
+}
+.header__container-navigation-ul{
+    margin-top: 30px;
+    display: flex;
+    list-style: none;
+}
+.header__container-navigation-ul-link-text{
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 24px;
+    color: #403F3D;
+    margin: 30px;
+    text-decoration: none;
+}
+.header__container-navigation-ul-link-text-menu{
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 550;
+    color: #403F3D;
+    text-decoration: none;
+}
+.header__container-navigation-div{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 40px;
+    left: 300px;
+}
+.footer__container-offer-text-span{
+    color: #B0907A;
+    font-style: italic;
+}
+.header__container-navigation-ul-link-text:hover{
+    text-decoration: underline;  
+}
+.header__container-navigation-ul-link-text-menu:hover{
+    text-decoration: underline;
+}
+
+/* main_menu */
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 1328px;
+    background-color: #E1D4C9;
+    margin-top: 50px;
+}
+.main__container{
+    display: flex;
+    flex-direction: column;
+    width: 1360px;
+    height: 100%;
+}
+.main__container-offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    height: 236px;
+}
+.main__container-offer-text{
+    margin: 0 auto;
+    width: 800px;
+    height: 150px;
+    font-family: 'Inter';
+    font-size: 60px;
+    line-height: 75px;
+    text-align: center;
+    color: #403F3D;
+}
+.main__container-offer-text-span{
+    color: #B0907A;
+    font-style: italic;
+}
+.main__container-offer-tabs{
+    width: 361px;
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+}
+.main__container-offer-tebs-button{
+    display: flex;
+    width: 115px;
+    height: 46px;
+    border-radius: 100px;
+    padding: 8px 16px 8px 8px;
+    background-color: #E1D4C9;
+    border: 1px solid #C1B6AD;
+    cursor: pointer;
+    transition: 1s;
+}
+.active{
+    background-color: #665F55;
+    color: #E1D4C9;
+}
+.main__container-offer-tebs-button-text{
+    margin:  auto;
+    width: 53px;
+    height: 24px;
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 24px;
+    color: #403F3D;
+}
+.main__container-offer-tebs-button-image{
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    border-radius: 100%;
+    background-color: #C1B6AD;
+}
+.main__container-grid{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(4, 310px);
+    margin-top: 50px;
+    width: 100%;
+    height: 1052px;
+}
+.main__container-grid-box{
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    height: 506px;
+    border-radius: 40px;
+    border: 1px solid #C1B6AD;
+}
+.main__container-grid-box-image{
+    width: 310px;
+    height: 310px;
+    border-radius: 40px;
+    transition: 1s;
+}
+.main__container-grid-box-image:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.main__container-grid-box-description{
+    display: flex;
+    margin-left: 30px;
+    flex-direction: column;
+    width: 270px;
+    height: 144px;
+}
+.main__container-grid-box-description-name ,.main__container-grid-box-description-price{
+    font-family: 'Inter';
+    font-size: 24px;
+    line-height: 30px;
+    color: #403F3D;
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+.main__container-grid-box-description-des{
+    width: 270px;
+    font-family: 'Inter-400';
+    font-size: 18px;
+    line-height: 24px;
+    color: #403F3D;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+.footer__container{
+    width: 1360px;
+    height: 450px;
+    background-color: #665F55;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer__container-offer{
+    width: 530px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.footer__container-offer-text{
+    font-family: 'Inter';
+    font-size: 60px;
+    line-height: 75px;
+    margin: 0 auto;
+    color: #E1D4C9;
+}
+.footer__container-offer-socials{
+    display: flex;
+    justify-content: space-between;
+    width: 204px;
+    height: 60px;
+}
+.footer__container-offer-socials-but{
+    transition: 1s;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    border: 1px solid #C1B6AD;
+    background-color: #665F55;
+}
+.footer__container-offer-socials-but:hover{
+    transition: 1s;
+    background-color: #B0907A;
+    border: 0px;
+}
+.footer__container-contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 530px;
+    height: 186px;
+}
+.footer__container-contacts-us{
+    font-family: 'Inter';
+    font-size: 20px;
+    line-height: 30px;
+    color: #E1D4C9;
+}
+.footer__container-contacts-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 262px;
+    height: 116px;
+    margin-top: 20px;
+}
+.footer__container-contacts-info-full{
+    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20px;
+}
+.footer__container-contacts-info-full-item:hover{
+    transition: 0.5s;
+    border-bottom: 3px solid #E1D4C9;
+}
+.footer__container-contacts-info-full-item{
+    transition: 0.5s;
+    text-decoration: none;
+    margin: 0 auto;
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 24px;
+    color: #E1D4C9;
+    margin-left: 5px;
+}
