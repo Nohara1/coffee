@@ -6,8 +6,6 @@ fetch('./product.json')
     return response.json();
   })
   .then(data => {
-
-
     if (Array.isArray(data) && data.length > 0) {
       const buttons = document.querySelectorAll('.main__container-offer-tebs-button');
       let blocksCreated = false;
@@ -22,6 +20,7 @@ fetch('./product.json')
         };
         updateProducts('coffee', 0, 8);
       };
+     
       function handleClickTea() {
         buttons[0].classList.remove('active');
         buttons[1].classList.add('active');
@@ -38,11 +37,10 @@ fetch('./product.json')
       buttons[0].addEventListener('click', handleClickCoffee);
       buttons[1].addEventListener('click', handleClickTea);
       buttons[2].addEventListener('click', handleClickDessert);
-
-    
       
         const gr = document.querySelector('.main__container-grid');
-          function addCoffee() {data.slice(0, 8).forEach(product => {
+        
+          function addCoffee(){data.slice(0, 8).forEach(product => {
           
            const grid = document.createElement('div');
            const image = document.createElement('img');
@@ -93,7 +91,8 @@ fetch('./product.json')
             block.style.display = 'none'; 
           }
         });
-      }
+      };
+      handleClickCoffee();
     } else {
         console.error('No products found or products array is empty.');
     }

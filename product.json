@@ -289,7 +289,7 @@
   
     {
       "name": "Moroccan",
-      "description": "Fragrant black tea with the addition of tangerine, cinnamon, honey, lemon and mint",
+      "description": "Fragrant black tea with the addition of tangerine, cinnamon, honey",
       "price": "4.50",
       "image": "./img/tea-1.png",
       "category": "tea",
@@ -505,7 +505,7 @@
   
     {
       "name": "Cheesecakes",
-      "description": "Soft cottage cheese pancakes with sour cream and fresh berries and sprinkled with powdered sugar",
+      "description": "Soft cottage cheese pancakes with sour cream and fresh berries ",
       "price": "4.50",
       "image": "./img/dessert-3.png",
       "category": "dessert",
