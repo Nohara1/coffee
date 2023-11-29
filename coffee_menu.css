@@ -294,6 +294,17 @@ body{
     border-radius: 100px;
     border: 1px solid #665F55;
     cursor: pointer;
+    transition: 0.5s;
+}
+.main__container-window-modal-description-but-buttons-active{
+    background-color: #665F55;
+    color: #E1D4C9;
+    border: 1px solid #665F55;
+}
+.main__container-window-modal-description-but-buttons:hover{
+    background-color: #665F55;
+    color: #E1D4C9;
+    border: 1px solid #665F55;
 }
 .main__container-window-modal-description-total{
     display: flex;
@@ -301,11 +312,18 @@ body{
     justify-content: space-between;
 }
 .main__container-window-modal-description-alert{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
     height: 52px;
     border-top: 1px;
     border-color: #C1B6AD;
     padding: 12px 0px 12px 0px;
+}
+.main__container-window-modal-description-alert-image{
+    width: 16px;
+    height: 16px;
 }
 .main__container-window-modal-description-button{
     width: 100%;
@@ -320,6 +338,12 @@ body{
     line-height: 24px;
     color: #403F3D;
     cursor: pointer;
+}
+.main__container-window-modal-description-button:hover{
+    background-color: #665F55;
+    color: #E1D4C9;
+    border: 1px solid #665F55;
+    transition: 0.5s;
 }
 .main__container-window-modal-description-alert-text{
     width: 414px;
@@ -377,6 +401,7 @@ body{
     border-radius: 100px;
     border: 1px solid #C1B6AD;
     background-color: #665F55;
+    cursor: pointer;
 }
 .footer__container-offer-socials-but:hover{
     transition: 1s;

@@ -147,6 +147,7 @@ body{
     color: #E1D4C9;
 }
 
+
 /* main class */
 /* main favorite */
 
@@ -405,6 +406,7 @@ body{
     border-radius: 100px;
     border: 1px solid #C1B6AD;
     background-color: #665F55;
+    cursor: pointer;
 }
 .footer__container-offer-socials-but:hover{
     transition: 1s;
