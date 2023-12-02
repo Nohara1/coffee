@@ -3,6 +3,8 @@ const controlSpans = document.querySelectorAll('.main__favorite-containe-control
 const prevButton = document.getElementById('left');
 const nextButton = document.getElementById('right');
 
+let touchStartX = 0;
+let touchEndX = 0;
 let currentIndex = 0;
 
 function updateActiveIndicator(index) {
@@ -35,6 +37,29 @@ function prevSlide() {
 function nextSlide() {
   currentIndex = (currentIndex === slides.length - 1) ? 0 : currentIndex + 1;
   showSlide(currentIndex);
+}
+
+
+slides.forEach((slide, index) => {
+  slide.addEventListener('touchstart', e => {
+    touchStartX = e.touches[0].clientX;
+  });
+  slide.addEventListener('touchend', e => {
+    touchEndX = e.changedTouches[0].clientX;
+    handleSwipe(index);
+  });
+});
+
+function handleSwipe(index) {
+  const threshold = 50;
+  const diff = touchEndX - touchStartX;
+  if (Math.abs(diff) > threshold) {
+    if (diff > 0) {
+      prevSlide();
+    }else{
+      nextSlide();
+    }
+  }
 }
 
 prevButton.addEventListener('click', prevSlide);

@@ -249,6 +249,10 @@ body{
     height: 4px;
     margin-left: 610px;
 }
+.main__favorite-containe-slider-slide-photo{
+    width: 480px;
+    height: 480px;
+}
 .main__favorite-containe-control-span {
     display: flex;
     width: 40px;
@@ -666,11 +670,12 @@ body{
         width: 348px;
         height: 576px;
     }
-    .main__favorite-containe-slider-slide-one{
+    .main__favorite-containe-slider-slide-one, .main__favorite-containe-slider-slide-two ,.main__favorite-containe-slider-slide-three{
         width: 348px;
     }
     .main__favorite-containe-slider-slide-photo{
         width: 348px;
+        height: 348px;
     }
     .main__favorite-containe-slider-slide-one-text{
         width: 348px;

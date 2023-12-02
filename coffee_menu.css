@@ -77,6 +77,21 @@ body{
     margin: 40px;
     left: 300px;
 }
+.header__container-burger{
+    display: none;
+}
+.header__container-burger-menu{
+    display: none;
+    position: fixed;
+    left: 50%;
+    width: 384px;
+    height: 804px;
+    background-color: #E1D4C9;
+    z-index: 9999;
+}
+.header__container-burger-menu-close{
+    display: none;
+}
 .footer__container-offer-text-span{
     color: #B0907A;
     font-style: italic;
@@ -353,8 +368,17 @@ body{
     line-height: 14px;
     color: #403F3D;
 }
-
-
+.main__container-button{
+    width: 60px;
+    height: 60px;
+    background-color: #E1D4C9;
+    border: 1px solid #665F55;
+    color: #665F55;
+    border-radius: 100px;
+    font-size: 30px;
+    margin-left: 314px;
+    display: none;
+}
 
 /* footer */
 .footer{
@@ -450,3 +474,237 @@ body{
     color: #E1D4C9;
     margin-left: 5px;
 }
+@media screen and (max-width: 768px){
+    html {
+        scroll-behavior: smooth;
+    }
+    body{
+        background-color: #E1D4C9;
+        margin:  0 auto;
+        display: flex;
+        flex-direction: column;
+        max-width: 768px;
+        height: 2400px;
+    }
+    .header{
+        width: 768px;
+    }
+    .header__container{
+        justify-content: space-between;
+        width: 768px;
+    }
+    .header__container-burger{
+        display: block;
+        margin-top: 10px;
+        margin-right: 10px;
+        width: 44px;
+        height: 44px;
+        border: 1px solid #665F55;
+        background-color: #E1D4C9;
+        color: #665F55;
+        font-size: 35px;
+        border-radius: 100px;
+    }
+    .header__container-navigation{
+        display: none;
+        width: 44px;
+        height: 44px;
+    }
+    .header__container-navigation-ul, .header__container-navigation-div{
+        display: none;
+    }
+    .header__hero-offer{
+        width: 688px;
+    }
+    .header__container-burger-menu{
+        display: none;
+        flex-direction: column;
+        z-index: 9999;
+        transition: 1s;
+    }
+    .header__container-burger-menu-close{
+        display: block;
+        margin-top: 10px;
+        margin-right: 10px;
+        position: relative;
+        width: 44px;
+        left: 85%;
+        height: 44px;
+        border: 1px solid #665F55;
+        background-color: #E1D4C9;
+        color: #665F55;
+        font-size: 35px;
+        border-radius: 100px;
+    }
+    .header__container-burger-menu-navigation{
+        width: 348px;
+        height: 440px;
+        margin-top: 100px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .header__container-burger-menu-navigation-ul{
+        list-style: none;
+    }
+    .header__container-burger-menu-navigation-ul-link{
+        margin-top: 40px;
+    }
+    .header__container-navigation-ul-link-text{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .header__container-burger-menu-div{
+        margin-top: 50px;
+    }
+    .header__container-navigation-ul-link-text-menu{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .main{
+        height: 1428px;
+    }
+    .main__container{
+        width: 688px;
+        height: 1503px;
+    }
+    .main__container-offer{
+        height: 311px;
+    }
+    .main__container-grid{
+        grid-template-columns: repeat(2, 310px);
+        margin-left: 10px;
+    }
+    .main__container-offer-text{
+        width: 688px;
+        font-size: 60px;
+        line-height: 75px;
+    }
+    .main__container-window-modal{
+        width: 688px;
+        height: 626px;
+    }
+    .main__container-window-modal-description{
+        width: 346px;
+        height: 594px;
+    }
+    .main__container-window-modal-description-size{
+        height: 132px;
+    }
+    .main__container-window-modal-description-but{
+        width: 326px;
+        height: 100px;
+        flex-wrap: wrap;
+    }
+    .main__container-button{
+        display: block;
+    }
+    .footer{
+        margin-top: 100px;
+    }
+    .footer__container{
+        width: 688px;
+        height: 736px;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 380px){
+    html {
+        scroll-behavior: smooth;
+    }
+    body{
+        background-color: #E1D4C9;
+        margin:  0 auto;
+        display: flex;
+        flex-direction: column;
+        max-width: 380px;
+        height: 2570px;
+    }
+    .header{
+        width: 380px;
+    }
+    .header__container{
+        justify-content: space-between;
+        width: 380px;
+    }
+    .header__hero-offer{
+        width: 348px;
+        height: 552px;
+    }
+    .header__hero-offer-information{
+        width: 316px;
+        height: 432px;
+        margin-left: 20px;
+    }
+    .header__hero-offer-information-paragraf{
+        width: 316px;
+        height: 144px;
+        font-size: 42px;
+        line-height: 48.3px;
+    }
+    .header__hero-offer-information-text{
+        width: 316px;
+        height: 144px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .header__container-burger-menu{
+        left: 0px;
+    }
+    .main{
+        height: 2490px;
+    }
+    .main__container{
+        width: 348px;
+        height: 2490px;
+    }
+    .main__container-offer{
+        height: 206px;
+    }
+    .main__container-offer-text{
+        width: 348px;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .main__container-grid{
+        height: 2244px;
+        margin-left: 20px;
+        grid-template-columns: repeat(1, 310px);
+    }
+    .main__container-window-modal{
+        width: 342px;
+        height: 626px;
+    }
+    .main__container-window-modal-image{
+        display: none;
+    }
+    .main__container-window-modal-description{
+        width: 310px;
+        height: 594px;
+    }
+    .main__container-button{
+        margin-left: 140px;
+    }
+    .footer{
+        height: 526px;
+    }
+    .footer__container{
+        margin-bottom: 100px;
+        width: 348px;
+        height: 450px;
+    }
+    .footer__container-offer{
+        width: 316px;
+        height: 180px;
+    }
+    .footer__container-offer-text{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .footer__container-contacts{
+        width: 316px;
+        height: 186px;
+    }
+}
+
