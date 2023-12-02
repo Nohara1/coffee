@@ -3,14 +3,14 @@
 	src: local('Inter'),
 		url(/font/Inter-SemiBold.otf); 
      
-};
+}
 @font-face {
     font-family: 'Inter-400'; 
     src: local('Inter-400'),
         url(/font/Inter-Regular.otf);
 }
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 body{
     background-color: #E1D4C9;
@@ -150,6 +150,7 @@ body{
     justify-content: space-between;
 }
 .main__container-offer-tebs-button{
+    padding: 8px 16px 8px 8px;
     display: flex;
     width: 115px;
     height: 46px;
@@ -159,6 +160,15 @@ body{
     border: 1px solid #C1B6AD;
     cursor: pointer;
     transition: 1s;
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 24px;
+}
+.main__mobile-container-offer-buttons-but-a{
+    font-size: 16px;
+}
+.main__mobile-container-offer-buttons-but{
+    font-size: 16px;
 }
 .active{
     background-color: #665F55;
@@ -311,12 +321,7 @@ body{
     cursor: pointer;
     transition: 0.5s;
 }
-.main__container-window-modal-description-but-buttons-active{
-    background-color: #665F55;
-    color: #E1D4C9;
-    border: 1px solid #665F55;
-}
-.main__container-window-modal-description-but-buttons:hover{
+.main__container-window-modal-description-but-buttons-active, .main__container-window-modal-description-but-buttons:hover{
     background-color: #665F55;
     color: #E1D4C9;
     border: 1px solid #665F55;
@@ -381,13 +386,13 @@ body{
 }
 
 /* footer */
+
 .footer{
     width: 100%;
     height: 500px;
     margin-top: 50px;
     display: flex;
     justify-content: center;
-
 }
 .footer__container{
     width: 1360px;
@@ -454,7 +459,6 @@ body{
     margin-top: 20px;
 }
 .footer__container-contacts-info-full{
-    
     display: flex;
     flex-direction: row;
     width: 100%;

@@ -12,7 +12,6 @@ fetch('./product.json')
         const window = document.querySelector('.main__container-window');
         console.log(gridBoxes);
         
-
         tabsButtons.forEach((tabButton, tabIndex) => {
             tabButton.addEventListener('click', () => {
                 const category = tabButton.querySelector('.main__container-offer-tebs-button-text').textContent.toLowerCase();
@@ -20,7 +19,6 @@ fetch('./product.json')
                 assignClickHandlers(productsByCategory);
             });
         });
-
 
         function assignClickHandlers(productsByCategory){
             gridBoxes.forEach((gridBox, gridIndex) => {
@@ -75,11 +73,9 @@ fetch('./product.json')
                     windowImage.src = product.image;
                     windowDescriptionAlertImage.src = './img/info-empty.png'
 
-
                     window.style.opacity = 1;
                     window.style.display = 'flex';
                     
-
                     windowModal.appendChild(windowImage);
                     window.appendChild(windowModal);
                     windowModal.appendChild(windowDescription);
@@ -150,7 +146,6 @@ fetch('./product.json')
                             })
                         }
                     }
-
 
                     windowDescriptionButton.addEventListener('click', () => {
                         window.style.opacity = 0;

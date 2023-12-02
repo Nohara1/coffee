@@ -15,8 +15,6 @@ fetch('./product.json')
       let coffeeRefreshed = false;
       let dessertRefreshed = false;
 
-
-
       function handleClickCoffee() {
         buttons[0].classList.add('active');
         buttons[1].classList.remove('active');
@@ -26,8 +24,7 @@ fetch('./product.json')
           blocksCreated = true;
         }
         updateProducts('coffee', 0, 8);
-      }
-      
+      };
       function handleClickTea() {
         buttons[0].classList.remove('active');
         buttons[1].classList.add('active');
@@ -40,13 +37,10 @@ fetch('./product.json')
         buttons[2].classList.add('active');
         updateProducts('dessert', 12, data.length);
       };
-
       buttons[0].addEventListener('click', handleClickCoffee);
       buttons[1].addEventListener('click', handleClickTea);
       buttons[2].addEventListener('click', handleClickDessert);
-      
-          
-
+    
           function addCoffee(){
             const coffeeData = window.innerWidth <= 768 ? data.slice(0, 4) : data.slice(0, 8);
             coffeeData.forEach(product => {
@@ -80,8 +74,6 @@ fetch('./product.json')
             });
           };
 
-          
-
       function refreshCoffee() {
         if (buttons[0].classList.contains('active')) {
           if (coffeeRefreshed) {
@@ -90,9 +82,9 @@ fetch('./product.json')
           } else {
             updateProducts('coffee', 4, 8)
             coffeeRefreshed = true;
-          }
-        }
-      }
+          };
+        };
+      };
       
       function refreshDessert() {
         if (buttons[2].classList.contains('active')) {
@@ -102,15 +94,14 @@ fetch('./product.json')
           } else {
             updateProducts('dessert', 16, 20);
             dessertRefreshed = true;
-          }
-        }
-      }
-
+          };
+        };
+      };
 
       buttonRefresh.addEventListener('click', () =>{
           refreshCoffee ();
           refreshDessert();
-      })
+      });
 
       function updateProducts(category, startIdx, endIdx) {
         const teaBlocks = gr.querySelectorAll('.main__container-grid-box');
@@ -133,7 +124,6 @@ fetch('./product.json')
           }
         });
       };
-      
       handleClickCoffee();
     } else {
         console.error('No products found or products array is empty.');
@@ -142,8 +132,3 @@ fetch('./product.json')
   .catch(error => {
     console.error('There was a problem with the fetch operation:', error);
   });
-  
-  
-  
-  
-

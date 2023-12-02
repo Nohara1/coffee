@@ -3,7 +3,7 @@
 	src: local('Inter'),
 		url(/font/Inter-SemiBold.otf); 
      
-};
+}
 @font-face {
     font-family: 'Inter-400'; 
     src: local('Inter-400'),
@@ -161,7 +161,6 @@ body{
     color: #E1D4C9;
 }
 
-
 /* main class */
 /* main favorite */
 
@@ -283,7 +282,6 @@ body{
     margin: 0 auto;
     font-family: 'Inter';
     font-size: 60px;
-
 }
 .main__about-container-text-span{
     font-family: 'Inter';
@@ -343,7 +341,6 @@ body{
     height: 64px;
 }
 .main__mobile-container-offer-buttons-but{
-    gap: 15px;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -353,10 +350,15 @@ body{
     border-radius: 100px;
     background-color: #E1D4C9;
     cursor: pointer;
+    color: #403F3D;
+    font-family: 'Inter';
+    font-size: 16px;
+    padding: 8px 16px 8px 16px;
 }
 .main__mobile-container-offer-buttons-but:hover{
     transition: 1s;
     background-color: #665F55;
+    color:  #E1D4C9;
 }
 .main__mobile-container-offer-buttons-but-text{
     width: 100px;
@@ -452,7 +454,6 @@ body{
     margin-top: 20px;
 }
 .footer__container-contacts-info-full{
-    
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -594,7 +595,7 @@ body{
     }
     .main__mobile{
         margin-top: 50px;
-       height: 1072px;
+        height: 1072px;
     }
     .main__mobile-container{
         width: 688px;
