@@ -1,13 +1,13 @@
 @font-face {
 	font-family: 'Inter'; 
 	src: local('Inter'),
-		url(/font/Inter-SemiBold.otf); 
+		url(./font/Inter-SemiBold.otf); 
      
 }
 @font-face {
     font-family: 'Inter-400'; 
     src: local('Inter-400'),
-        url(/font/Inter-Regular.otf);
+        url(./font/Inter-Regular.otf);
 }
 html {
   scroll-behavior: smooth;
